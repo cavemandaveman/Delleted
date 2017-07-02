@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flashfile version="1.0">
+    <id>fastboot</id>
+    <platform>mofd_v1</platform>
+        <code_group name="FASTBOOT">
+            <file TYPE="FASTBOOT">
+              <name>droidboot_postsf.img</name>
+                <version>1397</version>
+            </file>
+        </code_group>
+        <command>
+            <string>fastboot flash fastboot $fastboot_file</string>
+            <timeout>120000</timeout>
+            <retry>2</retry>
+            <description>Flashing droidboot</description>
+            <mandatory>1</mandatory>
+        </command>
+</flashfile>

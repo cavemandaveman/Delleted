@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flashfile version="1.0">
+    <id>system</id>
+    <platform>mofd_v1</platform>
+    <gpflag>
+        <value>0x80000c27</value>
+    </gpflag>
+        <code_group name="FIRMWARE">
+            <file TYPE="IFWI">
+                <name>ifwi_blackburn_qs_rd_opensource.bin</name>
+                <version>E004.F601</version>
+            </file>
+            <file TYPE="FW_DNX">
+                <name>dnx_fwr_blackburn_qs_rd_opensource.bin</name>
+                <version>E004.F601</version>
+            </file>
+        </code_group>
+        <code_group name="FASTBOOT">
+            <file TYPE="FASTBOOT">
+              <name>droidboot_502.img</name>
+                <version>1397</version>
+            </file>
+        </code_group>
+        <code_group name="BOOTLOADER">
+            <file TYPE="KBOOT">
+                <name>droidboot_dnx.img</name>
+                <version>1397</version>
+            </file>
+        </code_group>
+        <command>
+            <string>fastboot flash fastboot $fastboot_file</string>
+            <timeout>120000</timeout>
+            <retry>2</retry>
+            <description>Flashing droidboot</description>
+            <mandatory>1</mandatory>
+        </command>
+</flashfile>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flashfile version="1.0">
+    <id>system</id>
+    <platform>mofd_v1</platform>
+    <gpflag>
+        <value>0x80000d22</value>
+    </gpflag>
+        <code_group name="FIRMWARE">
+            <file TYPE="IFWI">
+                <name>ifwi_blackburn_qs_postsf.bin</name>
+                <version>0004.FD1F</version>
+            </file>
+            <file TYPE="FW_DNX">
+                <name>dnx_fwr_blackburn_qs_postsf.bin</name>
+                <version>0004.FD1F</version>
+            </file>
+        </code_group>
+</flashfile>
